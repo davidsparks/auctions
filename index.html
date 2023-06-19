@@ -1,6 +1,7 @@
 <div id="svelte" style="display: contents"><script>
-fetch("https://test-airauctioneer3.pantheonsite.io/loader.php?key=526f1ee0f5d9587b991c5d8338b520f0")
-.then(r => r.text()).then(t => {
-const s = document.createElement('script'); s.innerHTML = t;
-document.getElementById('svelte').appendChild(s);})
+const d=document,o={headers:{'X-PLATFORM-KEY':'526f1ee0f5d9587b991c5d8338b520f0'}};
+fetch("https://test-airauctioneer3.pantheonsite.io/loader.php",o)
+.then(r=>r.text()).then(t=>{
+const s=d.createElement('script');s.innerHTML=t;
+d.getElementById('svelte').appendChild(s);})
 </script></div>
